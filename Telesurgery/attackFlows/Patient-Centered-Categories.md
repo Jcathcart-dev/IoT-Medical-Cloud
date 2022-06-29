@@ -1,26 +1,30 @@
 **We want to protect the patient from harm, so we must guard against misconfigurations / firmware tampering, etc in the robotic device.**
-- Attack Flow: Attacker tricks authorized personnel to uploads malicious firmware to robotic device due to failure to authenticate firmware upload.  
--       //real-world...  biomed firmware mfg rep coming in to service the device; infected copy of firmware used to restore device to service.  
-- Attack Flow: Attacker modifies robotic device firmware through compromise of the vendor software update process (note: potential multi-patient effect). 
--       automated software update on the device is not configured properly... 
-- Attack Flow: Attacker modifies robotic device configuration file through compromise of a management system on the network... (differntiate from next one)... 
--       most devices have mgmt console; any way to compromise the mgmt console will work/ phishing, etc... 
-- Attack Flow: Attacker modifies device configuration settings through physical access to the device. 
--        phyiscally in the room, with access to front panel of device... 
-- Attack Flow: Attacker infects robotic device with virus/malicious code through cloned hard-drive, other means. 
--        changing a part in the system, that has a software/firmware component, results in compromise... real-world; compromised medical supply chain... Chris to look up... 
+<table>
+<tr> <td> <b> Attack flow id </b> </td> <td> <b> Description </b> </td> </tr> 
+<tr> <td> AF- </td> <td> Attack Flow: Attacker tricks authorized personnel to uploads malicious firmware to robotic device due to failure to authenticate firmware upload.  
+<br>  
+
+`real-world...  biomed firmware mfg rep coming in to service the device; infected copy of firmware used to restore device to service.`  </td> </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker modifies robotic device firmware through compromise of the vendor software update process (note: potential multi-patient effect). 
+<br>  automated software update on the device is not configured properly... </td> </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker modifies robotic device configuration file through compromise of a management system on the network... (differntiate from next one)... 
+<br>  most devices have mgmt console; any way to compromise the mgmt console will work/ phishing, etc... </td> </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker modifies device configuration settings through physical access to the device. 
+<br>   phyiscally in the room, with access to front panel of device... </td> </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker infects robotic device with virus/malicious code through cloned hard-drive, other means. 
+<br>   changing a part in the system, that has a software/firmware component, results in compromise... real-world; compromised medical supply chain... Chris to look up... </td> </tr>
 
 **We want to protect the patient from harm, so we must ensure the availabiity of the supporting cloud services. **(e.g. can't perform radiation verification because csp was attacked). 
-- Attack Flow: Attacker performs a denial of service through a network flood. 
--       device telemetry, biohealth data, target the egress circuit, or the cloud endpoints
-- Attack Flow: Attacker encrypts critical file on the device through ransomware. 
--        file to boot device, configuration file, various files could be targeted... 
-- Attack Flow: Attacker performs attack on cloud service provider (CSP) that renders biohealth data unavailable. 
--      attack on the collection of biohealth data in the cloud, or the analysis from that data back to system... 
--      note: scope is restricted to device operations... add this to introduction... 
-- Attack Flow: Attacker performs attack on cloud provider resulting in a lack of AI capability (results in further delay to care). 
--      note: scope is restricted to device operations... add this to introduction... 
-
+<tr> Attack Flow: Attacker performs a denial of service through a network flood. </tr>
+<tr>       device telemetry, biohealth data, target the egress circuit, or the cloud endpoints</tr>
+<tr> Attack Flow: Attacker encrypts critical file on the device through ransomware. </tr>
+<tr>        file to boot device, configuration file, various files could be targeted... </tr>
+<tr> Attack Flow: Attacker performs attack on cloud service provider (CSP) that renders biohealth data unavailable. </tr>
+<tr>      attack on the collection of biohealth data in the cloud, or the analysis from that data back to system... </tr>
+<tr>      note: scope is restricted to device operations... add this to introduction... </tr>
+<tr> Attack Flow: Attacker performs attack on cloud provider resulting in a lack of AI capability (results in further delay to care). </tr>
+<tr>      note: scope is restricted to device operations... add this to introduction... </tr>
+<table>
 **We want to protect the patient from harm, so we must ensure that a remote clinician has an accurate view of patient status.**
 - Attack Flow: Attacker modifies bio-sensor readings through tampering with biosensor data, or devices
 - --- most surgeries have nurse to monitor vitals; if vitals change, change course of surgery by notifying doctor; halt surgery, take medical action, etc... 
