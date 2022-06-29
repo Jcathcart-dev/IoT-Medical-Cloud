@@ -14,17 +14,13 @@
 <tr> <td> AF- </td> <td> Attack Flow: Attacker infects robotic device with virus/malicious code through cloned hard-drive, other means. 
 <br>   changing a part in the system, that has a software/firmware component, results in compromise... real-world; compromised medical supply chain... Chris to look up... </td> </tr>
 
-**We want to protect the patient from harm, so we must ensure the availabiity of the supporting cloud services. **(e.g. can't perform radiation verification because csp was attacked). 
-<tr> Attack Flow: Attacker performs a denial of service through a network flood. </tr>
-<tr>       device telemetry, biohealth data, target the egress circuit, or the cloud endpoints</tr>
-<tr> Attack Flow: Attacker encrypts critical file on the device through ransomware. </tr>
-<tr>        file to boot device, configuration file, various files could be targeted... </tr>
-<tr> Attack Flow: Attacker performs attack on cloud service provider (CSP) that renders biohealth data unavailable. </tr>
-<tr>      attack on the collection of biohealth data in the cloud, or the analysis from that data back to system... </tr>
-<tr>      note: scope is restricted to device operations... add this to introduction... </tr>
-<tr> Attack Flow: Attacker performs attack on cloud provider resulting in a lack of AI capability (results in further delay to care). </tr>
-<tr>      note: scope is restricted to device operations... add this to introduction... </tr>
-<table>
+<tr> <th colspan="2"> **We want to protect the patient from harm, so we must ensure the availabiity of the supporting cloud services. **(e.g. can't perform radiation verification because csp was attacked). </th> </tr>
+
+<tr> <td> AF- </td> <td> Attack Flow: Attacker performs a denial of service through a network flood.  device telemetry, biohealth data, target the egress circuit, or the cloud endpoints</tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker encrypts critical file on the device through ransomware.   file to boot device, configuration file, various files could be targeted... </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker performs attack on cloud service provider (CSP) that renders biohealth data unavailable. attack on the collection of biohealth data in the cloud, or the analysis from that data back to system... note: scope is restricted to device operations... add this to introduction... </tr>
+<tr> <td> AF- </td> <td> Attack Flow: Attacker performs attack on cloud provider resulting in a lack of AI capability (results in further delay to care). note: scope is restricted to device operations... add this to introduction... </tr>
+</table>
 **We want to protect the patient from harm, so we must ensure that a remote clinician has an accurate view of patient status.**
 - Attack Flow: Attacker modifies bio-sensor readings through tampering with biosensor data, or devices
 - --- most surgeries have nurse to monitor vitals; if vitals change, change course of surgery by notifying doctor; halt surgery, take medical action, etc... 
