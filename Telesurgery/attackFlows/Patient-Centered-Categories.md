@@ -1,6 +1,6 @@
 **We want to protect the patient from harm, so we must guard against misconfigurations / firmware tampering, etc in the robotic device.**
 <table>
-<tr> <td> <b> Attack flow id </b> </td> <td> <b> Description </b> </td> </tr> 
+<tr> <td> <b> Attack flow id   </b> </td> <td> <b> Description </b> </td> </tr> 
 <tr> <td> AF- </td> <td> Attack Flow: Attacker tricks authorized personnel to uploads malicious firmware to robotic device due to failure to authenticate firmware upload.  
 <br>  
 
